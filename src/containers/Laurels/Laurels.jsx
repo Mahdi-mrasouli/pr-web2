@@ -1,0 +1,40 @@
+import React from 'react'
+
+import { Subheading } from '../../components'
+import {images, data, bg} from '../../constants'
+import './laurels.css'
+
+const AwardsCard = ({ award: {imgUrl, title, subtitle}}) => (
+  <div className="app__laurels_awards-card">
+    <img src={imgUrl} alt="awards" />
+    <div className="app__laurels_awards-card_content">
+      <p className='p__cormorant' style={{color: '#DCCA87'}}>{title}</p>
+      <p className='p__opensans'>{subtitle}</p>
+    </div>
+  </div>
+);
+
+
+const Laurels = () => (
+  <div className='app__bg app__wrapper section__padding'id='awards'>
+    
+    <div className="app__wrapper_info" style={{marginTop: '-100px'}}>
+        <Subheading title='Awards & Recognition'/>
+        <h1 className='headtext__cormorant'>Our Laurels</h1>
+
+        <div className="app__laurels_awards">
+        {data.award.map((award) => <AwardsCard award={award} key={award.title}/>)}
+        </div>
+    </div>
+    <div className="app__wrapper_img">
+      <img src={images.laurels}/>
+    </div>
+    {/* <video src={bg} style={{zIndex: 0}} loop autoPlay ></video> */}
+  </div>
+);
+  
+    
+  
+
+
+export default Laurels

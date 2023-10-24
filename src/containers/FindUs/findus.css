@@ -1,0 +1,63 @@
+.app__findus-information {
+    margin-top: 2rem;
+}
+
+.app__findus-information p {
+    color: var(--color-grey);
+    font-family: var(--font-alt);
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.btn-findus {
+    margin-top: 2rem !important;
+}
+
+.app__findus_img {
+    flex: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+
+}
+.app__findus_img img {
+    width: 85%;
+    box-shadow: 0 0 20px #ffb7448f;
+}
+
+.app__findus-media {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.app__findus-media li {
+    list-style: none;
+    color: var(--color-grey);
+    margin-right: 2rem;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.app__findus-media li:hover {
+    color: var(--color-golden);
+}
+
+@media screen and (max-width: 1150px){ 
+    .app__findus_img img{
+        margin: 3rem 6rem 0 0;
+    }
+}
+@media screen and (max-width: 650px){ 
+    .app__findus_img img {
+        width: 120%;
+       
+    }
+}

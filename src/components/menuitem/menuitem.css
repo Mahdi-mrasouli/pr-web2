@@ -1,0 +1,56 @@
+.app__menuitem {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.app__menuitem:hover {
+    background-color: rgba(46, 46, 46, 0.405);
+    box-shadow: 0 0px 5px var(--color-white)
+}
+
+.app__menuitem-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.app__menuitem-sub {
+    width: 100%;
+    margin-top: 0.3rem;
+}
+
+.app__menuitem-name {
+    flex: 1;
+}
+
+.app__menuitem-dash {
+    width: 40px;
+    
+    height: 2px;
+    margin: 0 2rem 0 1rem;
+    background-color: brown;
+    border-radius: 5px;
+}
+
+.app__menuitem-price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 1150px) {
+    .p__cormorant {
+        padding: 0 !important;
+        
+    }    
+
+    .app__menuitem-dash {
+        width: 100px;
+        margin-right:30px;
+    }
+}
